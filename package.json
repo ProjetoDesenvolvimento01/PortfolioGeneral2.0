@@ -1,0 +1,23 @@
+{
+  "name": "potfoliogeral",
+  "version": "1.0.0",
+  "description": "Junção dos Portifólios da equipe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjetoDesenvolvimento01/PotfolioGeral.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProjetoDesenvolvimento01/PotfolioGeral/issues"
+  },
+  "homepage": "https://github.com/ProjetoDesenvolvimento01/PotfolioGeral#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  }
+}
