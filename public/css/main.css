@@ -4,10 +4,31 @@
     box-sizing: border-box;
 }
 
+body {
+    /*Cor da Página*/
+    background-color: rgb(55, 209, 189);
+}
 .primary-color{
     color: white;
 }
 
 .background-color{
     background-color: rgb(97, 54, 88);
+}
+
+.texto-um {
+    background-color: aquamarine;
+    width: 60%;
+    height: 100%;
+}
+
+.texto {
+    background-color: bisque;
+}
+
+.Imagem-logo {
+    max-width: 200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
