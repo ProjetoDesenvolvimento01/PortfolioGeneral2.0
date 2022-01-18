@@ -16,7 +16,7 @@ body {
     background-color: rgb(97, 54, 88);
 }
 
-.texto-um {
+.imagemLogo {
     background-color: aquamarine;
     width: 60%;
     height: 100%;
@@ -31,4 +31,11 @@ body {
     max-height:150px;
     width: auto;
     height: auto;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.textoSobre {
+    background-color: seagreen;
+    text-align: end;
 }

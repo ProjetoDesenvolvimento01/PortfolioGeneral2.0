@@ -2259,12 +2259,12 @@
     "viewBackgroundColor": "#ffffff",
     "gridSize": null,
     "scrollX": 230,
-    "scrollY": -1158.6111111111109,
+    "scrollY": -688.6111111111109,
     "zoom": {
-      "value": 1.1,
+      "value": 0.5,
       "translation": {
-        "x": -1131.7658730158776,
-        "y": 890.7257936507942
+        "x": 21.522282400236122,
+        "y": 606.1997923782897
       }
     }
   }
