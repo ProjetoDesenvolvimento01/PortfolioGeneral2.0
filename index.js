@@ -9,6 +9,36 @@ app.use('/css', express.static(__dirname + 'public/css'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
+app.get('/download/Alexandre', (req, res) => {
+    try{
+        const file = `${__dirname}/uploads/ALEXANDRE_ESTEVAN_DE_CARVALHO_ARAUJO.pdf`
+        res.download(file);
+        console.log("Download feito com sucesso! 1")
+    }catch(e){
+        console.log(e)
+    }
+})
+
+app.get('/download/LucasPereira', (req,res) => {
+    try{
+        const file = `${__dirname}/uploads/Curriculo_Lucas_Pereira_Dos_Santos_Telefone_981675580.pdf`
+        res.download(file)
+        console.log("Download feito com sucesso! 2")
+    }catch(e){
+        console.log(e)
+    }
+})
+
+app.get('/download/Pedro', (req,res) => {
+    try{
+        const file = `${__dirname}/uploads/Curriculo_Pedro_Virgilio_Sousa_Silva.pdf`
+        res.download(file)
+        console.log("Download feito com sucesso! 3")
+    }catch(e){
+        console.log(e)
+    }
+})
+
 app.get("/", function(req, res){
     res.render("index", { text: 'TESTE DE EJS'});
 });
