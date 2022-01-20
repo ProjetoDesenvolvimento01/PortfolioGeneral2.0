@@ -5,30 +5,43 @@
 }
 
 body {
-    /*Cor da Página*/
-    background-color: rgb(55, 209, 189);
-}
-.primary-color{
-    color: white;
-}
-
-.background-color{
-    background-color: rgb(97, 54, 88);
-}
-
-.texto-um {
-    background-color: aquamarine;
-    width: 60%;
-    height: 100%;
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.texto {
-    background-color: bisque;
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    text-align: center;
+    padding: 20px;
 }
 
-.Imagem-logo {
-    max-width: 200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
+
+element.style {
+}
+.text-end {
+    text-align: right!important;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
 }
