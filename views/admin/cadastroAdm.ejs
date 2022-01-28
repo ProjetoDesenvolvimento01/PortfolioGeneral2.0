@@ -1,0 +1,37 @@
+<%- include('../partials/header.ejs') %>
+
+<body>
+    <form class="container mt-4" action="/cadastrar" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nome de Usuário</label>
+            <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nametest" />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Endereço de Email</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"/>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button id="btnCad" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+<script>
+    function cad(){
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var btnCad = document.getElementById("btnCad");
+        // btnCad.disabled = true;
+        // btnCad.innerHTML = `<span>Carregando</span>`
+
+        if(nome != "" && email != "" && password != ""){
+            alert("Usuário cadastrado com sucesso!");
+        }else{
+            alert("Os campos não podem estar vazios.");
+            // btnCad.disabled = false;
+        }
+    }
+</script>

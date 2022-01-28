@@ -1,10 +1,33 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8080;
+const bodyparser = require("body-parser")
 
+const adm = require('./Database/queryAdm')
+
+const connection = require('./Database/connection')
+
+const adminController = require('./controller/admController')
+
+connection.authenticate().then(()=>{console.log('Conexão com o banco feita com sucesso!')}).catch((msgError) => {console.log(msgError)})
+
+const { Pool } = require('pg')
+
+const pool = new Pool({ connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
+})
+
+pool.connect();
 
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
+
+app.use(bodyparser.urlencoded())
+app.use(bodyparser.json())
+
+app.use('/', adminController);
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
@@ -40,7 +63,7 @@ app.get('/download/Pedro', (req,res) => {
 })
 
 app.get("/", function(req, res){
-    res.render("index", { text: 'TESTE DE EJS'});
+    res.render("index");
 });
 
 app.listen(PORT, () => {
