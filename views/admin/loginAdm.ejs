@@ -1,22 +1,20 @@
 <%- include('../partials/header.ejs') %>
 
 <body>
-    <div class="row justify-content-center align-items-center vh-100">
-        <form class="col-auto bg-primary p-3 rounded-3" method="POST" action="/login/0/admin">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insert your email here!" name="email">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" name="senha">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </form>
+    <div class="card position-absolute top-50 start-50 translate-middle" style="width: 25rem;">
+      <form class="card-body mt-4" method="post" action="/login/0/admin">
+        <div class="mb-3">
+          <label for="email" class="form-label">Endereço de E-mail</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Inseria o seu email aqui!" />
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha" aria-describedby="senhaHelp" name="senha" placeholder="Inseria sua senha aqui!" />
+        </div>
+        <div class="row">
+          <button class="col-8 mx-auto btn btn-primary" type="submit">submit</button>
+          <a href="/" type="button" class="col-8 mx-auto btn btn-danger mt-3">Cancel</a>
+        </div>
+      </form>
     </div>
 </body>
