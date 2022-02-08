@@ -34,7 +34,7 @@ app.set('view engine', 'ejs');
 
 app.get('/download/Alexandre', (req, res) => {
     try{
-        const file = `${__dirname}/uploads/curriculo/ALEXANDRE_ESTEVAN_DE_CARVALHO_ARAUJO.pdf`
+        const file = `${__dirname}/public/uploads/curriculo/ALEXANDRE_ESTEVAN_DE_CARVALHO_ARAUJO.pdf`
         res.download(file);
         console.log("Download feito com sucesso! 1")
     }catch(e){
@@ -44,7 +44,7 @@ app.get('/download/Alexandre', (req, res) => {
 
 app.get('/download/LucasPereira', (req,res) => {
     try{
-        const file = `${__dirname}/uploads/curriculo/Curriculo_Lucas_Pereira_Dos_Santos_Telefone_981675580.pdf`
+        const file = `${__dirname}/public/uploads/curriculo/Curriculo_Lucas_Pereira_Dos_Santos_Telefone_981675580.pdf`
         res.download(file)
         console.log("Download feito com sucesso! 2")
     }catch(e){
@@ -54,7 +54,7 @@ app.get('/download/LucasPereira', (req,res) => {
 
 app.get('/download/Pedro', (req,res) => {
     try{
-        const file = `${__dirname}/uploads/curriculo/Curriculo_Pedro_Virgilio_Sousa_Silva.pdf`
+        const file = `${__dirname}/public/uploads/curriculo/Curriculo_Pedro_Virgilio_Sousa_Silva.pdf`
         res.download(file)
         console.log("Download feito com sucesso! 3")
     }catch(e){
