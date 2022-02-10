@@ -24,7 +24,7 @@ pool.connect();
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
 
-app.use(bodyparser.urlencoded())
+app.use(bodyparser.urlencoded({extended:false}))
 app.use(bodyparser.json())
 
 app.use('/', adminController);
