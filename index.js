@@ -71,10 +71,3 @@ app.listen(PORT, () => {
     console.log(`>> Ao ligar o servidor no navegador, utilize: localhost:${PORT}`);
     console.log(`\n====> Servidor ligado!! PORTA: ${PORT} <====\n`);
 });
-
-$(document).ready(function() {
-	$('#voltaTopo').click(function(){
-		$('html, body').animate({scrollTop:0}, 'slow');
-		return false;
-	});
-});
