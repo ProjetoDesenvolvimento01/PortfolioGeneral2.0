@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+   
 }
 
 body {
@@ -15,6 +23,36 @@ body {
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+
+}
+
+body{
+    background-image: url(https://cdn.wallpapersafari.com/38/13/sQtEFD.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    
+    
+}
+.featurette-heading{
+    color: black;
+}
+
+.span-featurette{
+    color: white;
+}
+
+
+.lead{
+    color: wheat;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: wheat;
 }
 
 .row {
