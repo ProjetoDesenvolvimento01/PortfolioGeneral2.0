@@ -70,9 +70,4 @@ app.listen(PORT, () => {
     console.log("\n>> Observação: Não utilize Live Server para verificar as atualizações do site estão sendo atualizadas.");
     console.log(`>> Ao ligar o servidor no navegador, utilize: localhost:${PORT}`);
     console.log(`\n====> Servidor ligado!! PORTA: ${PORT} <====\n`);
-<<<<<<< Updated upstream
 });
-=======
-});
-
->>>>>>> Stashed changes
