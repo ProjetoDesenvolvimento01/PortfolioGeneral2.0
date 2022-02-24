@@ -2,6 +2,19 @@
 
 <body>
     <form class="container mt-4" action="/cadastrar" method="POST">
+        <div class="personal-image">
+            <label class="label">
+                <input type="file" name="foto" id="fileFoto" />
+                <figure class="personal-figure">
+                    <img src="uploads/images/noprofile.jpg" id="imagem" class="personal-avatar" alt="avatar">
+                
+                    <figcaption class="personal-figcaption">
+                        <img
+                            src="https://raw.githubusercontent.com/ThiagoLuizNunes/angular-boilerplate/master/src/assets/imgs/camera-white.png">
+                    </figcaption>
+                </figure>
+            </label>
+        </div>
         <div class="mb-3">
             <label for="name" class="form-label">Nome de Usuário</label>
             <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nametest" />
@@ -34,4 +47,18 @@
             // btnCad.disabled = false;
         }
     }
+
+    function readImage(){
+        
+        if (this.files && this.files[0]){
+            var file = new FileReader();
+
+            file.onload = e => {
+                document.getElementById('imagem').src = e.target.result;
+            }
+            file.readAsDataURL(this.files[0])
+        }
+    }
+
+    document.getElementById('fileFoto').addEventListener("change", readImage, false)
 </script>

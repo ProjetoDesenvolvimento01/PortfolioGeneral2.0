@@ -3,10 +3,26 @@
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
         <div class="dropdown d-flex">
-            <a class="rounded-circle center d-block mx-auto" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="uploads/<%- image %>" style="width: 100px;height: 100px;" class="rounded-circle center d-block mx-auto"/></a><a href="/logout">Logout</a>
+            <a class="rounded-circle center d-block mx-auto" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" href="#"><img src="uploads/<%- foto %>" style="width: 100px;height: 100px;" class="rounded-circle center d-block mx-auto"/></a><a href="/logout">Logout</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li><a href="#" class="dropdown-item">Edit your profile</a></li>
             </ul>
         </div>
     </div>
   </nav>
+
+  <div class="container">
+      <div class="row">
+
+        <div class="form-floating col-6">
+            <input type="text" class="form-control" placeholder=" "/>
+            <label class="ms-2">User Name</label>
+        </div>
+
+        <div class="form-floating col-6">
+            <textarea name="description" id="description" cols="30" rows="10" class="form-control" placeholder=" "></textarea>
+            <label class="ms-2">Your description</label>
+        </div>
+        
+      </div>
+  </div>

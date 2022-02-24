@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8080;
 const bodyparser = require("body-parser")
-
+const flash = require('express-flash')
+const session = require('express-session')
 const adm = require('./Database/queryAdm')
 
 const connection = require('./Database/connection')
@@ -23,6 +24,14 @@ pool.connect();
 
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
+
+app.use(session({
+    secret: "salçjfçalsdfjsadlçjaf",
+    resav: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 3600000}
+}))
+app.use(flash())
 
 app.use(bodyparser.urlencoded())
 app.use(bodyparser.json())

@@ -1,15 +1,22 @@
 <%- include('../partials/header.ejs') %>
 
 <body>
+
+  <% if(erro){ %>
+    <div class="alert alert-danger" role="alert">
+        <%= erro %>
+    </div>
+<% } %>
+
     <div class="card position-absolute top-50 start-50 translate-middle" style="width: 25rem;">
       <form class="card-body mt-4" method="post" action="/login/0/admin">
         <div class="mb-3">
           <label for="email" class="form-label">Endereço de E-mail</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Inseria o seu email aqui!" />
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Inseria o seu email aqui!" required />
         </div>
         <div class="mb-3">
           <label for="senha" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="senha" aria-describedby="senhaHelp" name="senha" placeholder="Inseria sua senha aqui!" />
+          <input type="password" class="form-control" id="senha" aria-describedby="senhaHelp" name="senha" placeholder="Inseria sua senha aqui!" required/>
         </div>
         <div class="row">
           <button class="col-8 mx-auto btn btn-primary" type="submit">submit</button>
