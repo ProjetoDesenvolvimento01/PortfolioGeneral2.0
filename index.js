@@ -12,7 +12,8 @@ const adminController = require('./controller/admController')
 
 connection.authenticate().then(()=>{console.log('Conexão com o banco feita com sucesso!')}).catch((msgError) => {console.log(msgError)})
 
-const { Pool } = require('pg')
+const { Pool } = require('pg');
+const router = require("./controller/admController");
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL,
     ssl: {
@@ -72,6 +73,8 @@ app.get('/download/Pedro', (req,res) => {
 })
 
 app.get("/", function(req, res){
+
+    adm.increment('view', {by: 1, where:{id: 1}})
     res.render("index");
 });
 

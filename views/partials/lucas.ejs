@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Meu Portfolio">
+	<meta name="keyword" content="palavras-chaves,separados,por,virgula">
+	<meta name="author" content="Lucas Felix">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Lucas Félix</title>
+</head>
+<body>
+
+	<section id="header">
+		<div class="header container">
+				<div class="menu">
+					<div class="hamburger"><div class="bar"></div></div>
+					<ul>
+						<li><a href="#main" data-after="Home">Home</a></li>
+						<li><a href="#sobre" data-after="Sobre">Sobre</a></li>
+						<li><a href="#Experiencia" data-after="Experiencia">Experiência</a></li>
+						<li><a href="#Formacao" data-after="Formacao">Formação</a></li>
+						<li><a href="#Contatos" data-after="Contatos">Contatos</a></li>
+					</ul>
+				</div>
+		</div>
+		<!-- Menu Computador-->
+	</section>
+
+
+	<section id="main">
+		<div class="main1">
+			<div class="title">
+				<h1>Olá,<span></span></h1>
+				<h1>Eu sou Lucas Félix.<span></span></h1>
+				<h1>Bem vindo!<span></span></h1>
+				<a href="#" type="button" class="cta">Portfolio</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="sobre">
+		<div class="sobre-mim">
+			<div class="sbrm">
+				<h1>
+					Um pouco sobre mim!
+				</h1>
+				<p>
+					Meu nome é <span>Lucas Félix</span>, tenho 22 anos, solteiro, brasileiro, curso Ciências da Computação na Estácio CEUT. Conto com alguns projetos já desenvolvidos no rumo de front-end e back-end de desenvolvimento web.
+				</p>
+				<p>Sempre em busca de adquirir mais experiência no meu ramo profissional, realizo cursos relacionado a programação com o intuito de trazer mais qualidade e eficiência para futuros projetos.</p>
+			</div>
+			<a href="http://localhost:8080/download"><img src="uploads/images/bg2.jpg"></a>
+		</div>
+	</section>
+
+	<section id="Experiencia">
+		<div class="experiencia-mim">
+			<h1>
+				Minhas Experiências!
+			</h1>
+			<div class="Skills um">
+				<div class="Skills_names">
+					<i class="fab fa-html5 skills_itens"></i>
+					<span>HTML5</span>
+				</div>
+				<div>
+					<span class="skill_porcentagem">60%</span>
+				</div>
+				<div class="skill_bar skill_html"></div>
+			</div>
+			<div class="Skills dois">
+					<div class="Skills_names">
+						<i class="fab fa-css3-alt skills_itens"></i>
+						<span>CSS3</span>
+					</div>
+					<div>
+						<span class="skill_porcentagem">45%</span>
+					</div>
+					<div class="skill_bar skill_css"></div>
+				</div>
+			</div>
+			<div class="Skills tres">
+					<div class="Skills_names">
+						<i class="fab fa-js-square skills_itens"></i>
+						<span>JavaScript</span>
+					</div>
+					<div>
+						<span class="skill_porcentagem">30%</span>
+					</div>
+					<div class="skill_bar skill_java"></div>
+				</div>
+			</div>
+			<div class="Skills quatro">
+					<div class="Skills_names">
+						<i class="fas fa-database skills_itens"></i>
+						<span>MySQL</span>
+					</div>
+					<div>
+						<span class="skill_porcentagem">58%</span>
+					</div>
+					<div class="skill_bar skill_sql"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="Formacao">
+		<div class="formacao-main">
+			<h1>Minhas Formações</h1>
+			<div class="certificado">
+				<p> Montagem e Manutenção de Computadores</p>
+				<p> Cursando Ciências da Computação</p>
+				<p>Curso Pacote Full Stack DankiCode</p>
+				<p>Inglês Intermediário</p>
+                <p>Curso de NodeJS</p>
+                <p>Conhecimento básico em TypeScript</p>
+                <p>Prática em Bootstrap</p>
+                <p>Desenvolvimento de aplicativos mobile (React Native e Flutter)</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="Contatos">
+		<div class="all">
+			<h1>Contatos</h1>
+			<div class="texto">
+				<div class="contato-mim linkedin">
+					<i class="fab fa-linkedin-in"></i>
+					<p>Lucas Félix</p>
+					<a href="https://www.linkedin.com/in/lucas-f%C3%A9lix-695701208/" target="_blank">Contate!</a>
+				</div>
+				<div class="contato-mim facebook">
+					<i class="fab fa-facebook-f"></i>
+					<p>Lucas Félix</p>
+					<a href="https://www.facebook.com/lucas.felix.3781" target="_blank">Contate!</a>
+				</div>
+				<div class="contato-mim instagram">
+					<i class="fab fa-instagram"></i>
+					<p>Lucas Félix</p>
+					<a href="https://www.instagram.com/lucas.mateus_21/" target="_blank">Contate!</a>
+				</div>
+				<div class="contato-mim email">
+					<i class="fas fa-envelope"></i>
+					<a href="mailto:lmateus8673@gmail.com"><p>lmateus8673@gmail.com</p></a>
+					<a href="mailto:lucas.merito@hotmail.com"><p>lucas.merito@hotmail.com</p></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+<script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+	
+	const hamburger = document.querySelector('.menu .hamburger');
+	const mobile_menu = document.querySelector('.header .menu ul');
+	const header = document.querySelector('.header.container');
+
+	hamburger.addEventListener('click',()=>{
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+
+	const menu_item = document.querySelectorAll('.header .menu ul li a');
+
+	menu_item.forEach((item)=>{
+		item.addEventListener('click',()=>{
+			hamburger.classList.toggle('active');
+			mobile_menu.classList.toggle('active');
+		});
+	});
+
+	const scr = ScrollReveal({
+		origin: 'top',
+		distance: '80px',
+		duration: 1000,
+		reset: true
+	});
+
+	scr.reveal('.sbrm p', {});
+	scr.reveal('.sbrm h1',{delay: 400});
+	scr.reveal('.sobre-mim img',{delay: 800});
+
+	scr.reveal('.experiencia-mim h1',{});
+	scr.reveal('.um',{delay: 400});
+	scr.reveal('.dois',{delay: 700});
+	scr.reveal('.tres',{delay: 1000});
+	scr.reveal('.quatro',{delay: 1300});
+
+	scr.reveal('.formacao-main h1',{});
+	scr.reveal('.certificado',{delay: 400});
+
+	scr.reveal('.all h1',{});
+
+
+	document.addEventListener('scroll',()=>{
+		var scroll_position = window.scrollY;
+		if(scroll_position > 250){
+			header.style.backgroundColor = '#29323c'
+		}else{
+			header.style.backgroundColor = 'transparent'
+		}
+	});
+
+	document.addEventListener('scroll',()=>{
+		var scroll_botton = window.scrollY;
+		if(scroll_botton > 250){
+			hamburger.style.backgroundColor = "#29323c"
+		}else{
+			hamburger.style.backgroundColor = "transparent"
+		}
+	});
+
+</script>
+
+</body>
+</html>

@@ -22,7 +22,7 @@ router.get('/userAuthentic', auth,(req, res) => {
     var user = req.session.resultado.id
     if(user != undefined){
         adm.findByPk(user).then(resultado => {
-            res.render('../views/admin/userAuthentic', {nome: resultado.nome, foto: resultado.image})
+            res.render('../views/admin/userAuthentic', {nome: resultado.nome, foto: resultado.foto, view: resultado.view})
         })
     }else{
         res.redirect('/login')
@@ -54,7 +54,7 @@ router.post('/cadastrar', upimage.single('foto'), (req, res) => {
     if(foto != undefined){
         foto = foto.path.replace('public', 'uploads', '')
     }else{
-        foto = '/uploads/images'
+        foto = '/images/noprofile.jpg'
     }
 
     req.flash("nome", nome)
@@ -113,6 +113,10 @@ router.post('/login/0/admin', (req, res) => {
     }else{
         res.redirect('/login/0/admin')
     }
+})
+
+router.get('/lucasfelix', (req, res) => {
+    res.render('../views/partials/lucas')
 })
 
 router.get('/logout', (req, res) => {
